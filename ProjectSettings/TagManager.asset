@@ -9,6 +9,15 @@ TagManager:
   - Chcekpoint
   - Checkpoint
   - Enemy
+  - DK_A
+  - DK_B
+  - DK_C
+  - O_A
+  - O_B
+  - O_C
+  - S_A
+  - S_B
+  - S_C
   layers:
   - Default
   - TransparentFX
@@ -16,9 +25,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Player
+  - Background
+  - Foreground
   - 
   - 
   - 
