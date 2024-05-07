@@ -101,7 +101,9 @@
     <Compile Include="Assets\Scripts\FinalGame\PlayerMovement.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\Scripts\FinalGame\EnemyMovement.cs" />
+    <Compile Include="Assets\Scripts\FinalGame\GameManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+    <Compile Include="Assets\Scripts\FinalGame\StartMenu.cs" />
     <Compile Include="Assets\Scripts\Exercise 6\PlayerController6.cs" />
     <Compile Include="Assets\Scripts\FinalGame\OgreMovement.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />

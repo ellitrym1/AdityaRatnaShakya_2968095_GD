@@ -3,12 +3,12 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int maxHP = 100;
+    public int maxHP = 1000;
     private int currentHP;
 
     public Text hpText;
 
-    private Animator animator;
+    public Animator animator;
 
     void Start()
     {
@@ -38,7 +38,8 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
-        animator.SetTrigger("Death");
+        Debug.Log("DEad");
+        animator.SetBool("Death", true);
     }
 
     void UpdateUI()
