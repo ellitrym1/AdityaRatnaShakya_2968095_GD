@@ -15,11 +15,14 @@ public class PlayerController5 : MonoBehaviour
 
     private bool isDead = false;
 
+    private SpriteRenderer spriteRenderer;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -37,18 +40,11 @@ public class PlayerController5 : MonoBehaviour
 
             if (moveInput > 0)
             {
-                animator.SetBool("MoveRight", true);
-                animator.SetBool("MoveLeft", false);
+                spriteRenderer.flipX = false;
             }
             else if (moveInput < 0)
             {
-                animator.SetBool("MoveRight", false);
-                animator.SetBool("MoveLeft", true);
-            }
-            else
-            {
-                animator.SetBool("MoveRight", false);
-                animator.SetBool("MoveLeft", false);
+                spriteRenderer.flipX = true;
             }
         }
     }

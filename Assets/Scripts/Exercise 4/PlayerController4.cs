@@ -14,12 +14,14 @@ public class PlayerController4 : MonoBehaviour
     public GameManager4 gameManager4;
 
     private bool isDead = false;
+    private SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -37,19 +39,13 @@ public class PlayerController4 : MonoBehaviour
 
             if (moveInput > 0)
             {
-                animator.SetBool("MoveRight", true);
-                animator.SetBool("MoveLeft", false);
+                spriteRenderer.flipX = false;
             }
             else if (moveInput < 0)
             {
-                animator.SetBool("MoveRight", false);
-                animator.SetBool("MoveLeft", true);
+                spriteRenderer.flipX = true;
             }
-            else
-            {
-                animator.SetBool("MoveRight", false);
-                animator.SetBool("MoveLeft", false);
-            }
+            
 
             if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
             {
